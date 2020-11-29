@@ -270,7 +270,7 @@ border-right: 1px solid #fff;
 /* Team 
 =======================*/ 
 .team {
-  margin: 100px 0 70px 0; /*top&bottom 100px*/
+  margin: 100px 0 70px 0; /*top 100px bottom 70px*/
 }
 
 .team__inner {
@@ -291,6 +291,7 @@ border-right: 1px solid #fff;
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 3px;
 }
 
 .team__name{
@@ -311,4 +312,100 @@ border-right: 1px solid #fff;
   font-size: 14px;
   line-height: 1.5;
   color: #6c7279;
+
+  margin-bottom: 20px;
 }
+
+/* Social 
+=======================*/ 
+.social{
+display: flex;  
+}
+
+.social__item {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  background-color: #fff;
+  border: 1px solid #e8ecee;
+  border-radius: 4px;
+
+  margin-right: 4px;
+  transition: background-color .5s linear;
+}
+
+.social__icon {
+  fill: #c6cacc; /*цвет иконки*/
+
+  display: block;
+  height: 18px;
+
+  transition: fill .5s linear;
+}
+
+.social__item:hover {
+  background-color: #31344e;
+}
+
+/*поведение social__icon при наводе
+ на social__item*/
+.social__item:hover .social__icon {
+  fill: #fff;
+}
+
+/* Testimonials (reviews)  
+=======================*/ 
+
+.reviews{
+  background-color: #53354a;
+  overflow: hidden;
+}
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__photo {
+  width: 50%;
+
+  height: 500px;
+  position: relative;
+}
+
+.reviews__img{
+position: absolute;
+
+top: 50%;
+transform: translateY(-50%);
+right: 0;
+z-index: 1;
+}
+
+.reviews__content {
+  width: 50%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews__text {
+  font-family: 'Cardo', sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+
+  margin-bottom: 25px;
+}
+
+.reviews__author{
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+ 
